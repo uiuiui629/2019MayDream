@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'SHS';
+  src : local('Spoqa Han Sans Bold'),
+        url('./public/Spoqa Han Sans Bold.woff');
+}
+body{
+  background:url('./public/images/background.jpg')no-repeat center top;
+  background-size : cover;
+}
+#a{
+  line-height : 1.0em;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+  padding-bottom : 20px;
+  color: white;
+}
+#b{
+  padding-top : 15px;
+  font-size: 10px;
+}
+#button1{
+  background-color:#A4A4A4;
+  border : 0;
+  border-radius:30px;
+  font-size:15px;
+  padding:15px 30px;
+}
+#a,#button1{
+font-family : 'SHS';
+}
