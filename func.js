@@ -13,8 +13,8 @@ function getResult(arr,num,divisor) {
 
   for(i=0;i<num;i++){
     luckyNumString += luckyNumList[i].toString();
-    if(i%divisor==(divisor-1)) {luckyNumString += "<br><br>";}
-    else {luckyNumString += "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;";}
+    if(i%divisor==(divisor-1)) {luckyNumString += "<br/>";}
+    else {luckyNumString += "\t";}
   }
   return luckyNumString;
 }
