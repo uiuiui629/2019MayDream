@@ -11,10 +11,21 @@ function getResult(arr,num,divisor) {
   }
   luckyNumList.sort(range);
 
+for(i=0;i<num;i++){
+  if(luckyNumList[i]<10){
+      luckyNumList[i]+="";
+      luckyNumList[i]="00"+luckyNumList[i];
+    }
+  else if(luckyNumList[i]<100){
+      luckyNumList[i]+="";
+      luckyNumList[i]="0"+luckyNumList[i];
+    }
+  }
+
   for(i=0;i<num;i++){
     luckyNumString += luckyNumList[i].toString();
     if(i%divisor==(divisor-1)) {luckyNumString += "<br><br>";}
-    else {luckyNumString += "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;";}
+    else {luckyNumString += "&nbsp; &nbsp; &nbsp; &nbsp;";}
   }
   return luckyNumString;
 }
