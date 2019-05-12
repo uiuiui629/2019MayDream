@@ -1,6 +1,7 @@
-var numList = Array.from(Array(500).keys());
+let numList = Array.from(Array(500).keys());
 
 function getResult(arr,num,divisor) {
+  var i;
   var luckyNumList = new Array(num);
   var luckyNumString = "";
   for(var i=0;i<num;i++) {
@@ -9,6 +10,17 @@ function getResult(arr,num,divisor) {
     arr.splice(x,1);
   }
   luckyNumList.sort(range);
+
+  for(i=0;i<num;i++){
+  if(luckyNumList[i]<10){
+      luckyNumList[i]+="";
+      luckyNumList[i]="00"+luckyNumList[i];
+    }
+  else if(luckyNumList[i]<100){
+      luckyNumList[i]+="";
+      luckyNumList[i]="0"+luckyNumList[i];
+    }
+  }
 
   for(i=0;i<num;i++){
     luckyNumString += luckyNumList[i].toString();
