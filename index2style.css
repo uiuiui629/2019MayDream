@@ -1,12 +1,12 @@
 @font-face {
   font-family: Spoqa Han Sans Bold;
-  src: url('Spoqa Han Sans Bold.woff');
+  src: url('./public/Spoqa Han Sans Bold.woff');
 }
 
 body{
   margin:0;
   color: white;
-  background-image: url('background.jpg');
+  background-image: url('./public/images/background.jpg');
   background-size: cover;
   text-align: center;
   text-decoration: none;
