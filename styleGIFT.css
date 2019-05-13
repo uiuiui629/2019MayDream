@@ -1,0 +1,88 @@
+html{
+  min-height: 100%;
+}
+
+@font-face {
+  font-family: Spoqa Han Sans Bold;
+  src: url('public/Spoqa Han Sans Bold.woff') format('woff');
+}
+body{
+  background:url('public/images/background.jpg')no-repeat center;
+  background-size:cover;
+}
+
+ h1 {
+  font-family: Spoqa Han Sans Bold;
+  font-size:25px;
+  color:white;
+  text-align: center;
+  margin:0;
+  padding:20px 20px 0px 20px;
+   }
+  h2 {
+      font-family: Spoqa Han Sans Bold;
+      font-size:45px;
+      color:white;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:0px 20px 20px 20px;
+    }
+
+#grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#image{
+  text-align: center;
+}
+
+#text{
+  font-family: Spoqa Han Sans Bold;
+  display:grid;
+  color:white;
+  text-align: center;
+  grid-template-row: 1fr 1fr 1fr;
+  padding:70px 30px 30px 30px;
+}
+#gname{
+  font-family: Spoqa Han Sans Bold;
+  font-size:45px;
+}
+#num
+{
+  font-family: Spoqa Han Sans Bold;
+  font-size:90px;
+  padding:100px;
+}
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #190707;
+  transform: translateY(-7px);
+}
