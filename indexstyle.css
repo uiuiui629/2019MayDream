@@ -1,3 +1,7 @@
+html{
+  min-height: 100%;
+}
+
 @font-face {
   font-family: Spoqa Han Sans Bold;
   src: url('./public/Spoqa Han Sans Bold.woff');
@@ -6,7 +10,7 @@
 body{
   margin:0;
   color: white;
-  background-image: url('./public/images/background.jpg');
+  background: url('./public/images/background.jpg')no-repeat center;
   background-size: cover;
   text-align: center;
   text-decoration: none;
@@ -37,22 +41,27 @@ h3{
 p{
   text-decoration: none;
   font-size: 70px;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  /* padding-top: 50px;
+  padding-bottom: 20px; */
   text-align: center;
   font-family: Spoqa Han Sans Bold;
+  margin-top: 250px;
+  margin-bottom: 200px;
 }
 .button {
   width: 250px;
   background-color: #c0c0c0;
   border: none;
-  color: black;
   padding: 25px 32px;
   vertical-align: bottom;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 25px;
   border-radius: 50px;
   font-family: Spoqa Han Sans Bold;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  color: #444444;
 }

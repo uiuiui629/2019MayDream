@@ -1,3 +1,7 @@
+html{
+  min-height: 100%;
+}
+
 @font-face {
   font-family: 'SHS';
   src : local('Spoqa Han Sans Bold'),
