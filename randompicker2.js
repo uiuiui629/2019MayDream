@@ -77,14 +77,15 @@ function main() {
     localStorage.setItem("lucky3", luckyNumString3);
 
       // output = document.write(luckyNumString);
-
+    var luckyNum1 = localStorage.getItem("lucky1");
+    output = luckyNum1;
     var pid = "result1";
   }
 
   else if(document.body.id=='2'){
 
     var luckyNum2 = localStorage.getItem("lucky2");
-    console.log(luckyNum2);
+    output = luckyNum2;
 
       // output = document.write(luckyNumString);
 
@@ -93,13 +94,13 @@ function main() {
   else if(document.body.id=='3'){
 
     var luckyNum3 = localStorage.getItem("lucky3");
-    console.log(luckyNum3);
+    output=luckyNum3;
       // output = document.write(luckyNumString);
 
     var pid = "result3";
   }
 
-  document.getElementById(pid).innerHTML = output;
+  document.getElementById(pid).innerHTML=output;
 }
 
 window.onload = function(){
