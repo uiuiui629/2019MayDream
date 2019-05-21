@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <title>LUCKY NUMBER EVENT</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styleGIFT.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+
+  <div id="title">
+    <h1>LUCKY NUMBER EVENT</h1>
+    <h2>첫 번째 선물</h2>
+  </div>
+
+  <div id="image2">
+    <!-- <div>
+      <img src="public/images/ticketimg1.jpg" width="40%">
+    </div> -->
+
+    <div id="object" class="tossing"><img src="public/images/ticketimg1.jpg" width="40%"></div>
+    <div id="object" class="fadeIn"><button class="button" onclick="location.href='list1.html'">GO!!</button></div>
+
+  </div>
+
+
+
+ <!-- <div id="image">
+  <div>
+   <img src="public/images/gift_1.png"height=400px>
+  </div>
+  <div>
+    <img src="public/images/logo_1.png"width="40%">
+  </div>
+ </div>
+
+ <div id="text">
+    <div id="gname">
+     하이드로 플라스크<br>
+     16oz Wide Mouth, 25보틀
+    </div>
+    <div id="num">
+     25명
+    </div>
+  </div>
+
+  <div id="btn">
+    <button class="button" onclick="location.href='list1.html'">추첨</button>
+  </div> -->
+
+</div>
+
+<script>
+$(window).scroll(function() {
+  $('tossing').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("tossing");
+    }
+  });
+});
+
+$('fadeIn').click(function() {
+  $(this).addClass("fadeIn");
+});
+
+$(window).scroll(function() {
+  $('fadeIn').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("fadeIn");
+    }
+  });
+});
+
+$('fadeIn').click(function() {
+  $(this).addClass("fadeIn");
+});
+
+</script>
+
+<script>
+
+</script>
+
+</body>
+  </html>
