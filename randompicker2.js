@@ -27,15 +27,12 @@ function sorting(arr, num, divisor) {
 }
 
 function numtoStr(arr, num){
-  for(i=0;i<num;i++){
-
-    var str = arr.join('  ');
-
-    // if((i%divisor)==(divisor-1)) {luckyNumString += "<br><br>";}
-    // else {luckyNumString += "&nbsp; &nbsp; &nbsp; &nbsp;";}
+  for(var i=0;i<num;i++){
+    var str= arr;
   }
   return str;
 }
+
 
 function range(a,b){
   return a-b;
@@ -66,35 +63,54 @@ function main() {
     luckyNumString3 = numtoStr(luckySlc3, 30);
 
 
-    console.log(luckyNumString1);
-    console.log(luckyNumString2);
-    console.log(luckyNumString3);
+  var luckyNum1='';
+    for(i=0;i<25;i++){
+      luckyNum1 += luckyNumString1[i];
 
-    localStorage.setItem("lucky1", luckyNumString1);
+      if(i%5==4) {luckyNum1 += "<br><br>";}
+      else {luckyNum1 += "&nbsp; &nbsp; &nbsp; &nbsp;";}
+    }
 
-    localStorage.setItem("lucky2", luckyNumString2);
+  var luckyNum2='';
+    for(i=0;i<7;i++){
+        luckyNum2 += luckyNumString2[i];
 
-    localStorage.setItem("lucky3", luckyNumString3);
+        if(i%4==3) {luckyNum2 += "<br><br>";}
+        else {luckyNum2 += "&nbsp; &nbsp; &nbsp; &nbsp;";}
+      }
 
-      // output = document.write(luckyNumString);
-    var luckyNum1 = localStorage.getItem("lucky1");
+
+   var luckyNum3='';
+    for(i=0;i<30;i++){
+        luckyNum3 += luckyNumString3[i];
+
+        if(i%5==4) {luckyNum3 += "<br><br>";}
+        else {luckyNum3 += "&nbsp; &nbsp; &nbsp; &nbsp;";}
+       }
+
+    localStorage.setItem("lucky1", luckyNum1);
+
+    localStorage.setItem("lucky2", luckyNum2);
+
+    localStorage.setItem("lucky3", luckyNum3)
+
     output = luckyNum1;
     var pid = "result1";
   }
 
   else if(document.body.id=='2'){
 
-    var luckyNum2 = localStorage.getItem("lucky2");
-    output = luckyNum2;
-
       // output = document.write(luckyNumString);
+    var luckyNum2_1 = localStorage.getItem("lucky2");
+
+    output = luckyNum2_1;
 
     var pid = "result2";
   }
   else if(document.body.id=='3'){
+    var luckyNum3_1 = localStorage.getItem("lucky3");
 
-    var luckyNum3 = localStorage.getItem("lucky3");
-    output=luckyNum3;
+    output=luckyNum3_1;
       // output = document.write(luckyNumString);
 
     var pid = "result3";
