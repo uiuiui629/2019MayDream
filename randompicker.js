@@ -8,6 +8,7 @@ function getResult(arr,num,divisor) {
     x = parseInt(Math.random()*arr.length);
     luckyNumList[i] = arr[x]+1;
     arr.splice(x,1);
+    localStorage.setItem("key", JSON.stringify(arr));
   }
   luckyNumList.sort(range);
 
