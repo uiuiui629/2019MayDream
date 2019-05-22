@@ -121,12 +121,17 @@ function main() {
 }
 
 function popOutput(i,arr,pid){
-  if(i<arr.length){
+
+
+  if (i<arr.length){
+
+    arr[i] = '<p1 class="fadeIn">'+arr[i]+'</p1>';
     document.getElementById(pid).innerHTML+=arr[i];
     setTimeout(function(){popOutput(i+1,arr,pid)},1000);
   }
 
 }
+
 
 window.onload = function(){
   main();
