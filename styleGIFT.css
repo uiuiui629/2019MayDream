@@ -6,6 +6,7 @@ html{
   font-family: Spoqa Han Sans Bold;
   src: url('public/Spoqa Han Sans Bold.woff') format('woff');
 }
+
 body{
   background:url('public/images/background.jpg')no-repeat center;
   background-size:cover;
