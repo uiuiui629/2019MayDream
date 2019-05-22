@@ -35,10 +35,12 @@ function range(a,b){
   return a-b;
 }
 
+
 function makeOutput(luckyString){
   var result = luckyString.split(' ');
   return result;
 }
+
 
 function main() {
   if(document.body.id=='1'){
@@ -63,6 +65,7 @@ function main() {
     luckyNumString1 = numtoStr(luckySlc1, 25);
     luckyNumString2 = numtoStr(luckySlc2, 7);
     luckyNumString3 = numtoStr(luckySlc3, 30);
+
 
     var luckyNum1='';
     for(i=0;i<25;i++){
@@ -91,18 +94,22 @@ function main() {
 
     var output = new Array();
     output = makeOutput(luckyNum1);
+
     var pid = "result1";
   }
 
   else if(document.body.id=='2'){
+
     var luckyNum2_1 = localStorage.getItem("lucky2");
 
     var output = new Array();
     output = makeOutput(luckyNum2_1);
+
     var pid = "result2";
   }
   else if(document.body.id=='3'){
     var luckyNum3_1 = localStorage.getItem("lucky3");
+
 
     var output = new Array();
     output = makeOutput(luckyNum3_1);
@@ -118,6 +125,7 @@ function popOutput(i,arr,pid){
     document.getElementById(pid).innerHTML+=arr[i];
     setTimeout(function(){popOutput(i+1,arr,pid)},1000);
   }
+
 }
 
 window.onload = function(){

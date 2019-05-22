@@ -12,7 +12,7 @@ html{
 body{
   background:url('./public/images/background.jpg')no-repeat center top;
   background-size : cover;
-  /*overflow-y: hidden; overflow-x: hidden;*/
+  overflow-y: hidden; overflow-x: hidden;
 }
 
 #wrapper{
@@ -84,6 +84,7 @@ p1{
   color: #d0b6b5;
   transform: translateY(-7px);
 }
+
 
 .a,.button{
 font-family : 'SHS';

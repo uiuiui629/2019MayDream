@@ -1,0 +1,103 @@
+html{
+  min-height: 100%;
+}
+
+@font-face {
+  font-family: Spoqa Han Sans Bold;
+  src: url('./public/Spoqa Han Sans Bold.woff');
+}
+
+@font-face{
+  font-family : Spoqa Han Sans Regular;
+  src : url('./public/Spoqa Han Sans Regular.woff');
+}
+
+body{
+  height: 100%;
+  margin:0;
+  color: white;
+  background: url('./public/images/background.jpg')no-repeat center;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+  font-family: Spoqa Han Sans Bold;
+}
+
+#wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#title{
+  grid-row: 1 / 2;
+  margin-top: 20px;
+  border-bottom:1px solid #ffffff;
+}
+
+.t1{
+
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: Spoqa Han Sans Bold;
+}
+
+
+#NT1{
+  margin-top:20px;
+  grid-row : 2;
+  font-size : 30px;
+  margin-bottom: 20px;
+}
+
+#NC1{
+  grid-row : 3/4;
+  font-size : 22px;
+  margin-bottom: 20px;
+}
+
+#NT2{
+  grid-row : 4/6;
+  font-size : 30px;
+  margin-top : 10px;
+  margin-bottom: 20px;
+}
+
+#NC2{
+  grid-row : 6/7;
+  font-size : 22px;
+}
+
+#LBE{
+  grid-row: 7/9;
+  text-decoration: none;
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+  font-family: Spoqa Han Sans Bold;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+
+#title2{
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-family: Spoqa Han Sans Bold;
+}
+
+#subtitle2{
+  text-decoration: none;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: Spoqa Han Sans Bold;
+}
+image{
+  vertical-align: middle;
+}
