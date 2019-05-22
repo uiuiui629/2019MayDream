@@ -26,7 +26,6 @@ body{
 #wrapper{
   display: grid;
   grid-template-columns: 1fr;
-
 }
 
 #title{
@@ -36,6 +35,7 @@ body{
 }
 
 .t1{
+
   text-decoration: none;
   font-size: 15px;
   text-align: center;
