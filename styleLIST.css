@@ -41,6 +41,7 @@ body{
 p1{
   font-size : 35px;
   color : white;
+  -webkit-animation: fadein 2s;
 }
 .a
 {
@@ -84,6 +85,16 @@ p1{
   transform: translateY(-7px);
 }
 
+
 .a,.button{
 font-family : 'SHS';
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }

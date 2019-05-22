@@ -16,12 +16,10 @@ function randompick(arr, num) {
 function sorting(arr, num, divisor) {
   for(i=0;i<num;i++){
     if(arr[i]<10){
-        arr[i]+="";
-        arr[i]="00"+arr[i];
+        arr[i]="00"+arr[i].toString();
       }
     else if(arr[i]<100){
-        arr[i]+="";
-        arr[i]="0"+arr[i];
+        arr[i]="0"+arr[i].toString();
       }
     }
 }
@@ -33,10 +31,16 @@ function numtoStr(arr, num){
   return str;
 }
 
-
 function range(a,b){
   return a-b;
 }
+
+
+function makeOutput(luckyString){
+  var result = luckyString.split(' ');
+  return result;
+}
+
 
 function main() {
   if(document.body.id=='1'){
@@ -63,60 +67,65 @@ function main() {
     luckyNumString3 = numtoStr(luckySlc3, 30);
 
 
-  var luckyNum1='';
+    var luckyNum1='';
     for(i=0;i<25;i++){
       luckyNum1 += luckyNumString1[i];
-
-      if(i%5==4) {luckyNum1 += "<br><br>";}
-      else {luckyNum1 += "&nbsp; &nbsp; &nbsp; &nbsp;";}
+      if(i%5==4) {luckyNum1 += "<br><br> ";}
+      else {luckyNum1 += "&nbsp;&nbsp;&nbsp;&nbsp; ";}
     }
 
-  var luckyNum2='';
+    var luckyNum2='';
     for(i=0;i<7;i++){
         luckyNum2 += luckyNumString2[i];
-
-        if(i%4==3) {luckyNum2 += "<br><br>";}
-        else {luckyNum2 += "&nbsp; &nbsp; &nbsp; &nbsp;";}
+        if(i%4==3) {luckyNum2 += "<br><br> ";}
+        else {luckyNum2 += "&nbsp;&nbsp;&nbsp;&nbsp; ";}
       }
-
 
    var luckyNum3='';
     for(i=0;i<30;i++){
         luckyNum3 += luckyNumString3[i];
-
-        if(i%5==4) {luckyNum3 += "<br><br>";}
-        else {luckyNum3 += "&nbsp; &nbsp; &nbsp; &nbsp;";}
+        if(i%5==4) {luckyNum3 += "<br><br> ";}
+        else {luckyNum3 += "&nbsp;&nbsp;&nbsp;&nbsp; ";}
        }
 
     localStorage.setItem("lucky1", luckyNum1);
-
     localStorage.setItem("lucky2", luckyNum2);
+    localStorage.setItem("lucky3", luckyNum3);
 
-    localStorage.setItem("lucky3", luckyNum3)
+    var output = new Array();
+    output = makeOutput(luckyNum1);
 
-    output = luckyNum1;
     var pid = "result1";
   }
 
   else if(document.body.id=='2'){
 
-      // output = document.write(luckyNumString);
     var luckyNum2_1 = localStorage.getItem("lucky2");
 
-    output = luckyNum2_1;
+    var output = new Array();
+    output = makeOutput(luckyNum2_1);
 
     var pid = "result2";
   }
   else if(document.body.id=='3'){
     var luckyNum3_1 = localStorage.getItem("lucky3");
 
-    output=luckyNum3_1;
-      // output = document.write(luckyNumString);
 
+    var output = new Array();
+    output = makeOutput(luckyNum3_1);
     var pid = "result3";
   }
 
-  document.getElementById(pid).innerHTML=output;
+  popOutput(0,output,pid);
+
+}
+
+function popOutput(i,arr,pid){
+  if(i<arr.length){
+    document.getElementById(pid).innerHTML+=arr[i];
+    setTimeout(function(){popOutput(i+1,arr,pid)},1000);
+  }
+
 }
 
 window.onload = function(){
