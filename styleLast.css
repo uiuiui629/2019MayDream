@@ -48,32 +48,32 @@ body{
 #NT1{
   margin-top:20px;
   grid-row : 2;
-  font-size : 30px;
+  font-size : 25px;
   margin-bottom: 20px;
 }
 
 #NC1{
   grid-row : 3/4;
-  font-size : 22px;
+  font-size : 20px;
   margin-bottom: 20px;
 }
 
 #NT2{
   grid-row : 4/6;
-  font-size : 30px;
+  font-size : 25px;
   margin-top : 10px;
   margin-bottom: 20px;
 }
 
 #NC2{
   grid-row : 6/7;
-  font-size : 22px;
+  font-size : 20px;
 }
 
 #LBE{
   grid-row: 7/9;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   padding-top: 50px;
   text-align: center;
   font-family: Spoqa Han Sans Bold;
