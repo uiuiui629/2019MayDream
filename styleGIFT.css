@@ -51,9 +51,10 @@ h2 {
   grid-row: 2 / 3;
 }
 
-.box{
-  background-color: rgba(255, 255, 255, 0.5);
-}
+/* .box{
+  background: url('./public/images/backimg.png')no-repeat center;
+  padding:70px 30px 30px 30px;
+} */
 
 #image2{
   text-align: center;
