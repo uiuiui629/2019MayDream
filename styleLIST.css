@@ -96,8 +96,8 @@ font-family : 'SHS';
 	animation-name: fadeIn;
 	-webkit-animation-name: fadeIn;
 
-	animation-duration: 2s;
-	-webkit-animation-duration: 2s;
+	animation-duration: 3.5s;
+	-webkit-animation-duration: 3.5s;
 
 	animation-timing-function: ease-in-out;
 	-webkit-animation-timing-function: ease-in-out;

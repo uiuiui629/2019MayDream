@@ -1,4 +1,4 @@
-numList = Array.from(Array(500).keys());
+numList = Array.from(Array(570).keys());
 
 function randompick(arr, num) {
 
